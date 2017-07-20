@@ -1,5 +1,3 @@
-$off-white: #FAF8F3;
-
 @mixin font-face($font-family, $file-path, $font-weight) {
 	@font-face {
 		font-family: $font-family;
@@ -51,7 +49,7 @@ body {
 	padding-bottom: 20px;
 
 	a i {
-		color: $off-white;
+		color: #FAF8F3;
 		font-size: 30px;
 		margin: 10px;
 	}
