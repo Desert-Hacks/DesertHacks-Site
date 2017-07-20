@@ -1,0 +1,58 @@
+$off-white: #FAF8F3;
+
+@mixin font-face($font-family, $file-path, $font-weight) {
+	@font-face {
+		font-family: $font-family;
+		src: url('../fonts/#{$file-path}');
+		font-weight: $font-weight;
+		font-style: normal;
+  }
+}
+
+@include font-face('Axis', 'Axis Extrabold.otf', 800);
+@include font-face('Moderne Sans', 'MODERNE SANS.ttf', 400);
+
+section {
+	box-sizing: border-box;
+	padding-top: 60px;
+	position: relative;
+	width: 100%;
+
+	h1 {
+		font-family: 'Moderne Sans', sans-serif;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+body {
+	background-color: #F9D178;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+}
+
+.cactus {
+	height: 20vh;
+}
+
+.home {
+	min-height: 100vh;
+	position: relative;
+}
+
+.home .header {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social {
+	padding-bottom: 20px;
+
+	a i {
+		color: $off-white;
+		font-size: 30px;
+		margin: 10px;
+	}
+}
