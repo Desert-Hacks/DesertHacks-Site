@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  let colors = ["#B52945", "#F9D178", "#64AA65", "#5B9BA5"];
-  let randInt = Math.floor((Math.random() * 4) + 1);
+  let colors = ["#B52945", "#EFC873", "#64AA65", "#5B9BA5", "#574D68"];
+  let randInt = Math.floor((Math.random() * 5));
 
   document.body.style.backgroundColor = colors[randInt];
 });
